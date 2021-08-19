@@ -1,0 +1,9 @@
+services:
+  redis:
+    image: redis:6.2.1
+    hostname: redis
+    container_name: redis
+    # If you want to expose these ports outside your dev PC,
+    # remove the "127.0.0.1:" prefix
+    ports:
+      - 127.0.0.1:6379:6379
